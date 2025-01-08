@@ -1,0 +1,126 @@
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4; 
+  }
+  
+  .navbar {
+    width: 250px;
+    background-color: #000000; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgb(67, 66, 66);
+    padding: 20px 0;
+  }
+  
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #bebebe; 
+  }
+  
+  .title-icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .title-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .home-section {
+    width: 100%;
+    border-bottom: 1px solid #bebebe; 
+  }
+  
+  .home-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 83.5%;
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #1a1a1a; 
+  }
+  
+  .home-icon {
+    margin-right: 10px; 
+  }
+  
+  
+  .dropdown {
+    border-top: 1px solid #bebebe; 
+    border-bottom: 1px solid #bebebe;
+  }
+  
+  .dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .dropdown.active .dropdown-button {
+    background-color: #333;
+  }
+  
+  .dropdown-icon {
+    margin-right: 10px; 
+  }
+  
+  .dropdown-plus {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .dropdown-menu {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #333;
+  }
+
+  .new{
+    background-color: rgb(83, 144, 33);
+    font-weight: 400;
+    color: black;
+  }

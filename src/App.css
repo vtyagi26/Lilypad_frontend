@@ -1,0 +1,21 @@
+/* Reset body styles to remove padding and margin */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding/border in width and height calculations */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Ensure the app takes up the full viewport height */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Example content styles */
+.content {
+  flex: 1; /* Allows content to grow and fill available space */
+  padding: 20px; /* Add padding to main content area */
+  background-color: #f4f4f4; /* Light background for content area */
+}
