@@ -3,15 +3,15 @@ import './App.css';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import UpperBar from './components/upperbar'; 
 import Dashboard from './components/dashboard';
+import Categories from './components/categories';
 import Main_Dashboard from './components/Main_Dashboard';
-import Sample from './components/Sample';
 
 function App() {
   const router = createBrowserRouter([
     {
       path : "/",
       element : <><UpperBar />
-      <Dashboard /><Sample /></> 
+      <Dashboard /></> 
     },
     {
       path : "/Main_Dashboard",
@@ -19,15 +19,16 @@ function App() {
       <Main_Dashboard /></>
     },
     {
-      path : "/Category",
-      element : <>      <UpperBar />
-      <Dashboard /><Sample /></>
+      path : "/Categories",
+      element : <>
+
+      <Categories />
+      </>
     },
     {
       path : "/Attributes",
       element :<> <UpperBar />
       <Dashboard />
-      <Sample />
       </>
     }
   ])
