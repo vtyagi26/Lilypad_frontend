@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 100%; /* Allow container to take the full width */
+  margin: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1; /* Make the container flexible to take remaining space */
+}
+
+/* Layout for the product form to be side by side with the navbar */
+.dashboard-container {
+  display: flex; /* Use flexbox to align navbar and form side by side */
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Heading */
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Inputs and Textareas */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error Messages */
+.text-red-500 {
+  color: #e3342f;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Layout for Price, Discount Price, Tax Rate, etc. */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Space for Technical Specifications */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Dropdown Select Styling */
+select {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+
+  .md\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+}
