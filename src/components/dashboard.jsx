@@ -19,7 +19,7 @@ const Dashboard = () => {
 
         <div className="home-section">
           <NavLink
-            to="/"
+            to="/Main_Dashboard"
             className="home-button"
             activeClassName="new" 
           >

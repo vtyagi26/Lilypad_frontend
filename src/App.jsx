@@ -3,6 +3,7 @@ import './App.css';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import UpperBar from './components/upperbar'; 
 import Dashboard from './components/dashboard';
+import Main_Dashboard from './components/Main_Dashboard';
 import Sample from './components/Sample';
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
       <Dashboard /><Sample /></> 
     },
     {
-      path : "/Dashboard",
-      element : <><UpperBar />
-      <Dashboard /><Sample /></>
+      path : "/Main_Dashboard",
+      element : <>
+      <Main_Dashboard /></>
     },
     {
       path : "/Category",
