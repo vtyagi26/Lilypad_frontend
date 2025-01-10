@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Dashboard.css";
+import "./categories.css"; 
 
 const Dashboard = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -10,6 +11,7 @@ const Dashboard = () => {
   };
 
   return (
+    <>
     <div className="dashboard">
       <div className="navbar">
         <div className="title">
@@ -21,7 +23,7 @@ const Dashboard = () => {
           <NavLink
             to="/Main_Dashboard"
             className="home-button"
-            activeClassName="new" 
+            activeClassName="new"
           >
             <span className="home-icon">🏠︎</span>
             <span className="home-title">Dashboard</span>
@@ -35,25 +37,20 @@ const Dashboard = () => {
           </button>
           {isDropdownOpen && (
             <div className="dropdown-menu">
-              <NavLink
-                to="/categories"
-                className="dropdown-item"
-                activeClassName="new" 
-              >
+              <NavLink to="/categories" className="dropdown-item" activeClassName="new">
                 Categories
               </NavLink>
-              <NavLink
-                to="/attributes"
-                className="dropdown-item"
-                activeClassName="new" 
-              >
+              <NavLink to="/attributes" className="dropdown-item" activeClassName="new">
                 Attributes
               </NavLink>
             </div>
           )}
         </div>
       </div>
+
+
     </div>
+    </>
   );
 };
 
