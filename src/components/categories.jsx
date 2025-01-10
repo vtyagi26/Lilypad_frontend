@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import RichTextEditor from "./RichTextEditor";
 import toast from 'react-hot-toast';
 import "./Categories.css"
-import UpperBar from './upperbar'
-import Dashboard from './dashboard'
+import UpperBar from "./upperbar";
+import Dashboard from "./dashboard";
 
-// Predefined specifications for the categories
+
 const predefinedSpecifications = {
   "EV Bikes/Scooters": [
     { attribute_name: "Motor Power", attribute_type: "number", required: true },
@@ -198,11 +198,12 @@ const App = () => {
 
   return (
     <>
+    <div className="dasboard-container"></div>
     <div><UpperBar /></div>
+
     <div><Dashboard /></div>
     <div className="container mx-auto p-6">
       <h1 className="text-2xl mb-4">Product Form</h1>
-
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block mb-1">Name:</label>
@@ -457,7 +458,7 @@ const App = () => {
           Submit
         </button>
       </form>
-    </div>
+      </div>
     </>
   );
 };
