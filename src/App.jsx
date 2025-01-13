@@ -6,6 +6,7 @@ import Dashboard from './components/dashboard';
 import Categories from './components/categories';
 import Main_Dashboard from './components/Main_Dashboard';
 import Products from './components/Products';
+import Product_General from './components/Product_General';
 import Welcome from './components/Welcome';
 function App() {
   const router = createBrowserRouter([
@@ -37,11 +38,16 @@ function App() {
       path : "/Products",
       element :<> <Products/>
       </>
+    },
+    {
+      path:"/Product_General",
+      element:<>
+      <Product_General/></>
     }
   ])
   return (
     <>
-
+      
       <RouterProvider router = {router} />
 
     </>

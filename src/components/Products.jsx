@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Products.css";
 import UpperBar from './upperbar';
 import Dashboard from './dashboard';
+import { NavLink } from 'react-router-dom';
 
 const Products = () => {
     const [selectedProducts, setSelectedProducts] = useState([]);
@@ -69,7 +70,8 @@ const Products = () => {
                                         <td>{product.model}</td>
                                         <td>{product.price}</td>
                                         <td>{product.quantity}</td>
-                                        <td><img className='edit_icon' src="./src/assets/edit.png" alt="Edit" /></td>
+                                        <td><NavLink
+                                        to="/Product_General"><img className='edit_icon' src="./src/assets/edit.png" alt="Edit" /></NavLink></td>
                                     </tr>
                                 ))}
                             </tbody>

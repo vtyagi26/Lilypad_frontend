@@ -1,0 +1,11 @@
+.Product_General{
+    display: flex;
+    gap:20px;
+}
+.save_back{
+    width:40px;
+}
+.nav_product_edit{
+    display: flex;
+    justify-content: space-between;
+}
