@@ -10,8 +10,9 @@ function App() {
   const router = createBrowserRouter([
     {
       path : "/",
-      element : <><UpperBar />
-      <Dashboard /></> 
+      element : <><
+        <Welcome />
+      </> 
     },
     {
       path : "/Main_Dashboard",
