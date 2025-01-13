@@ -5,7 +5,7 @@ import UpperBar from './components/upperbar';
 import Dashboard from './components/dashboard';
 import Categories from './components/categories';
 import Main_Dashboard from './components/Main_Dashboard';
-
+import Products from './components/Products';
 function App() {
   const router = createBrowserRouter([
     {
@@ -29,6 +29,11 @@ function App() {
       path : "/Attributes",
       element :<> <UpperBar />
       <Dashboard />
+      </>
+    },
+    {
+      path : "/Products",
+      element :<> <Products/>
       </>
     }
   ])

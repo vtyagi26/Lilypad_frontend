@@ -43,6 +43,9 @@ const Dashboard = () => {
               <NavLink to="/attributes" className="dropdown-item" activeClassName="new">
                 Attributes
               </NavLink>
+              <NavLink to="/Products" className="dropdown-item" activeClassName="new">
+                Products
+              </NavLink>
             </div>
           )}
         </div>

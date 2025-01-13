@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+.Products{
+    display: flex;
+    gap:20px;
+}
+.Product_Nav{
+    display: flex;
+    justify-content: space-between;
+}
+.add_copy_delete{
+    width: 40px;
+}
+.Line{
+    border-bottom: 1px solid #ccc;
+}
+.Product_Content{
+    display: flex;
+    gap:30px;
+}
+.ProductListHeading{
+    width: 200px;
+    background-color: beige;
+    border: 1px solid #ccc;
+}
+.table {
+    border-collapse: collapse;
+  }
+  
+.table th,
+.table td {
+    border: 1px solid black;
+    padding: 20px;
+}
+.image{
+    width: 30px;
+}
+.edit_icon{
+    width: 50px;
+}
+.Filter_Heading{
+    background-color: #e5e0e0;
+}
+.Filter_Div{
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+.Input{
+    background-color: white;
+}
+.Filter_Button{
+    background-color: rgb(223, 219, 219);
+    color: black;
+}
