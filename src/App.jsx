@@ -6,6 +6,7 @@ import Dashboard from './components/dashboard';
 import Categories from './components/categories';
 import Main_Dashboard from './components/Main_Dashboard';
 import Products from './components/Products';
+import Welcome from './components/Welcome';
 function App() {
   const router = createBrowserRouter([
     {
