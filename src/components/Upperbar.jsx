@@ -14,8 +14,8 @@ const UpperBar = () => {
 
       <div className="optionsContainer">
         <button className="button" >View Profile</button>
-        <button className="button" >Language</button>
-        <button className="button logout" >Logout</button>
+        <button className="button2" >🔡</button>
+        <button className="button logout" >🔐</button>
       </div>
     </div>
   );
