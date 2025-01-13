@@ -19,6 +19,16 @@ const Dashboard = () => {
           <span className="title-text">Navigation</span>
         </div>
 
+          <NavLink
+    to="/"
+    className="root-button"
+    activeClassName="new"
+  >
+    <span className="root-icon">🔗</span>
+    <span className="root-title">Home</span>
+  </NavLink>
+</div>
+
         <div className="home-section">
           <NavLink
             to="/Main_Dashboard"
