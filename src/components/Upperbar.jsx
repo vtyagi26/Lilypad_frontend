@@ -1,5 +1,5 @@
 import React from 'react';
-import './UpperBar.css'; 
+import './UpperBar.css';
 
 const UpperBar = () => {
   return (
@@ -13,9 +13,9 @@ const UpperBar = () => {
       </div>
 
       <div className="optionsContainer">
-        <button className="button" >View Profile</button>
-        <button className="button2" >🔡</button>
-        <button className="button logout" >🔐</button>
+        <button className="button" title="View Profile">View Profile</button>
+        <button className="button2" title="Language">🔡</button>
+        <button className="button logout" title="Logout">🔐</button>
       </div>
     </div>
   );

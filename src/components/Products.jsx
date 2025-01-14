@@ -8,11 +8,25 @@ const Products = () => {
     const [selectedProducts, setSelectedProducts] = useState([]);
 
     const handleCheckboxChange = (productId) => {
-        setSelectedProducts(prevSelected => 
-            prevSelected.includes(productId) 
-            ? prevSelected.filter(id => id !== productId) 
-            : [...prevSelected, productId]
+        setSelectedProducts(prevSelected =>
+            prevSelected.includes(productId)
+                ? prevSelected.filter(id => id !== productId)
+                : [...prevSelected, productId]
         );
+    };
+
+    const handleDeleteClick = () => {
+        const confirmation = window.confirm("Are you sure you want to delete the selected items?");
+        if (confirmation) {
+            alert("Items deleted successfully!");
+            setSelectedProducts([]);
+        } else {
+            alert("Delete action canceled.");
+        }
+    };
+
+    const handleUpdateClick = () => {
+        alert("You don't have permission for this task.");
     };
 
     return (
@@ -25,11 +39,22 @@ const Products = () => {
                 <div>
                     <div className='Product_Nav'>
                         <h2>Products</h2>
-                        <div>
-                            <br />
-                            <img className='add_copy_delete' src="./src/assets/add.png" alt="Add" />
-                            <img className='add_copy_delete' src="./src/assets/copy.png" alt="Copy" />
-                            <img className='add_copy_delete' src="./src/assets/delete.png" alt="Delete" />
+                        <div className="buttons-container">
+                            <button
+                                className="btn update-btn"
+                                title="Update"
+                                onClick={handleUpdateClick}
+                            >
+                                Update
+                            </button>
+                            <button className="btn add-btn" title="Add">Add</button>
+                            <button
+                                className="btn delete-btn"
+                                title="Delete"
+                                onClick={handleDeleteClick}
+                            >
+                                Delete
+                            </button>
                         </div>
                     </div>
                     <hr className='Line' />
@@ -59,10 +84,10 @@ const Products = () => {
                                 ].map(product => (
                                     <tr key={product.id}>
                                         <td>
-                                            <input 
-                                                type="checkbox" 
-                                                checked={selectedProducts.includes(product.id)} 
-                                                onChange={() => handleCheckboxChange(product.id)} 
+                                            <input
+                                                type="checkbox"
+                                                checked={selectedProducts.includes(product.id)}
+                                                onChange={() => handleCheckboxChange(product.id)}
                                             />
                                         </td>
                                         <td align="center"><img className="image" src="./src/assets/ev.png" alt={product.name} /></td>
@@ -77,31 +102,31 @@ const Products = () => {
                             </tbody>
                         </table>
                         <div>
-                        <div className='Filter_Div'>
-                            <div className='Filter_Heading'>
-                                <h3>Filter</h3>
-                                <hr />
+                            <div className='Filter_Div'>
+                                <div className='Filter_Heading'>
+                                    <h3>Filter</h3>
+                                    <hr />
+                                </div>
+                                <h4>Product Name</h4>
+                                <input className="Input" placeholder='Product Name' />
+                                <h4>Model</h4>
+                                <input className="Input" placeholder='Model' />
+                                <h4>Price</h4>
+                                <input className="Input" placeholder='Price' />
+                                <h4>Quantity</h4>
+                                <input className="Input" placeholder='Quantity' />
+                                <h4>Status</h4>
+                                <input className="Input" placeholder='Status' />
+                                <br />
+                                <br />
+                                <button className='Filter_Button'>Filter</button>
                             </div>
-                            <h4>Product Name</h4>
-                            <input className="Input" placeholder='Product Name' />
-                            <h4>Model</h4>
-                            <input className="Input" placeholder='Model' />
-                            <h4>Price</h4>
-                            <input className="Input" placeholder='Price' />
-                            <h4>Quantity</h4>
-                            <input className="Input" placeholder='Quantity' />
-                            <h4>Status</h4>
-                            <input className="Input" placeholder='Status' />
-                            <br />
-                            <br />
-                            <button className='Filter_Button'>Filter</button>
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Products;
