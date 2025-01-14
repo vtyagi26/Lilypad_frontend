@@ -17,8 +17,8 @@ const Edit_Product = () => {
             <div className="Edit_Product_Div">
                 <h3><img className="Product_Edit_Icon" src="./src/assets/edit.png"/>Edit Product</h3>
                 <nav className="Edit_Nav">
-                    <h4><NavLink to="/General_Product_Edit">General</NavLink></h4>
-                    <h4><NavLink to="/Product_Discount">Discount</NavLink></h4>
+                    <h4><NavLink to="/General_Product_Edit" style={{color:"black"}}>General</NavLink></h4>
+                    <h4><NavLink to="/Product_Discount" style={{color:"black"}}>Discount</NavLink></h4>
                     <h4>Attribute</h4>
                     <h4>Images</h4>
                     <h4>SEO</h4>
