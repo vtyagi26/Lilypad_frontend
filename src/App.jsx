@@ -5,10 +5,10 @@ import UpperBar from './components/upperbar';
 import Dashboard from './components/dashboard';
 import Main_Dashboard from './components/Main_Dashboard';
 import Products from './components/Products';
-import Product_General from './components/Product_General';
 import Catcat from './components/Catcat';
 import Cat_General from './components/Cat_General';
-
+import General_Product_Edit from './components/General_Product_Edit';
+import Product_Discount from './components/Product_Discount';
 
 function App() {
   const router = createBrowserRouter([
@@ -48,9 +48,14 @@ function App() {
       </>
     },
     {
-      path:"/Product_General",
+      path:"/General_Product_Edit",
       element:<>
-      <Product_General/></>
+      <General_Product_Edit/></>
+    },
+    {
+      path:"/Product_Discount",
+      element:<>
+      <Product_Discount/></>
     },
 
   ])

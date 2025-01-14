@@ -5,9 +5,7 @@ body{
     display: flex;
     gap:10px;
 }
-.Main_Dashboard_Content{
-    
-}
+
 .Line{
     border-bottom: 1px solid #ccc;
 }

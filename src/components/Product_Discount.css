@@ -1,0 +1,10 @@
+.Discount_Table {
+    border-collapse: collapse;
+    width: 990px;
+}
+
+.Discount_Table th,
+.Discount_Table td {
+    border: 1px solid black;
+    padding: 5px;
+}

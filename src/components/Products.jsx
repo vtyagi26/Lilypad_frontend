@@ -96,7 +96,7 @@ const Products = () => {
                                         <td>{product.price}</td>
                                         <td>{product.quantity}</td>
                                         <td><NavLink
-                                        to="/Product_General"><img className='edit_icon' src="./src/assets/edit.png" alt="Edit" /></NavLink></td>
+                                        to="/General_Product_Edit"><img className='edit_icon' src="./src/assets/edit.png" alt="Edit" /></NavLink></td>
                                     </tr>
                                 ))}
                             </tbody>
