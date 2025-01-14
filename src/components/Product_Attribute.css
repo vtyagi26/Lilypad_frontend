@@ -1,0 +1,35 @@
+.General_Product_Edit_Main {
+    padding: 20px;
+}
+
+.product-edit-table {
+    width: 100%; /* Matches the width of the containing div */
+    border-collapse: collapse;
+    margin-top: 20px; /* Adds spacing between the table and Edit_Cat */
+}
+
+.product-edit-table th,
+.product-edit-table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd; /* Adds a border to the table cells */
+}
+
+.product-edit-table th {
+    font-weight: bold;
+    background-color: #b9acac; /* Light background for headers */
+}
+
+.editable-input {
+    width: 100%; /* Makes the input take full width of the column */
+    padding: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+    font-size: 14px;
+}
+
+.editable-input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border on focus */
+    background-color: #767676; /* Slightly different background when editing */
+}

@@ -9,7 +9,7 @@ const Product_Discount = () => {
     { quantity: 20, priority: 1, price: 77.0, startDate: '', endDate: '' },
     { quantity: 30, priority: 1, price: 66.0, startDate: '', endDate: '' },
   ]);
-
+  
   const handleAddRow = () => {
     setRows([
       ...rows,

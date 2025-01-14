@@ -1,0 +1,41 @@
+.Discount_Table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .Discount_Table th,
+  .Discount_Table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .Discount_Table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .Discount_Table td input {
+    height: 25px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .Discount_Table button {
+    cursor: pointer;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

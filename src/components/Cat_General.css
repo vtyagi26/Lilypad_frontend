@@ -1,79 +1,10 @@
-body {
-    background-color: rgb(248, 246, 246);
-}
-
-.Products {
-    display: flex;
-    gap: 20px;
-}
-
-.Cat_Nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttons-container {
-    display: flex;
-    gap: 10px;
-}
-
-.btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.update-btn {
-    background-color: yellow;
-    color: black;
-}
-
-.add-btn {
-    background-color: blue;
-}
-
-.delete-btn {
-    background-color: red;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-
-.Line {
-    border-bottom: 1px solid #ccc;
-}
-
-.Product_Content {
-    display: flex;
-    gap: 30px;
-}
-
-.ProductListHeading {
-    width: 200px;
-    background-color: beige;
-    border: 1px solid #ccc;
-}
-
-.table1 {
+.Discount_Table {
     border-collapse: collapse;
     width: 900px;
-    margin: 0 auto;
 }
 
-.table1 th,
-.table1 td {
+.Discount_Table th,
+.Discount_Table td {
     border: 1px solid black;
-    padding: 20px;
-    text-align: right;
-}
-
-.table1 th:nth-child(2),
-.table1 td:nth-child(2) {
-    text-align: left;
+    padding: 5px;
 }

@@ -3,20 +3,20 @@
     gap:20px;
 }
 .Edit_Product_Div{
-    width: 950px;
+    width: 900px;
     background-color: antiquewhite;
     padding:10px;
     border: 1px solid #ccc;
 }
 .save_back{
-    width:30px;
+    width:40px;
 }
 .nav_product_edit{
     display: flex;
     justify-content: space-between;
 }
 .Product_Edit_Icon{
-    width: 40px;
+    width: 30px;
 }
 
 .Edit_Nav{

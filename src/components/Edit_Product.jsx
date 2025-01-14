@@ -19,9 +19,9 @@ const Edit_Product = () => {
                 <nav className="Edit_Nav">
                     <h4><NavLink to="/General_Product_Edit" style={{color:"black"}}>General</NavLink></h4>
                     <h4><NavLink to="/Product_Discount" style={{color:"black"}}>Discount</NavLink></h4>
-                    <h4>Attribute</h4>
+                    <h4><NavLink to="/Product_Attribute" style={{color:"black"}}>Attribute</NavLink></h4>
                     <h4>Images</h4>
-                    <h4>SEO</h4>
+                    <h4><NavLink to="/Product_Seo" style={{color:"black"}}>SEO</NavLink></h4>
                 </nav>
             </div>
             </div>
