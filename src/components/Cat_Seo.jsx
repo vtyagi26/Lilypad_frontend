@@ -20,7 +20,7 @@ const General_Product_Edit = () => {
                 </div>
                 <div className='General_Product_Edit_Main'>
                     <Edit_Cat />
-                    {/* Editable table */}
+                  
                     <table className="product-edit-table">
                         <thead>
                             <tr>

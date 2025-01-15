@@ -1,8 +1,66 @@
-.Line1{
-    border-bottom: 20px solid #48e8e8;
-}
+/* Welcome.css */
 
-.Welcome_page_content{
-    background-color: black;
-    color: aliceblue;
-}
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1c1c1c;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 200vh; /* Full page height */
+    width: 100%; /* Full page width */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    height: calc(200vh - 70px); /* Adjust for UpperBar height */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .welcome-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(252, 252, 252);
+    color: rgb(5, 5, 5);
+    margin: 0; /* Ensures no extra margin around the content */
+  }
+  
+  .welcome-text {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #48e8e8;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #48e8e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(72, 232, 232, 0.8);
+  }
+  

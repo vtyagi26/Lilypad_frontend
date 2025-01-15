@@ -3,33 +3,33 @@
 }
 
 .product-edit-table {
-    width: 100%; /* Matches the width of the containing div */
+    width: 100%; 
     border-collapse: collapse;
-    margin-top: 20px; /* Adds spacing between the table and Edit_Cat */
+    margin-top: 20px; 
 }
 
 .product-edit-table th,
 .product-edit-table td {
     text-align: left;
     padding: 8px;
-    border: 1px solid #ddd; /* Adds a border to the table cells */
+    border: 1px solid #ddd; 
 }
 
 .product-edit-table th {
     font-weight: bold;
-    background-color: #b9acac; /* Light background for headers */
+    background-color: #b9acac; 
 }
 
 .editable-input {
-    width: 100%; /* Makes the input take full width of the column */
+    width: 100%; 
     padding: 8px;
     border: 1px solid #ddd;
-    box-sizing: border-box; /* Prevents padding from affecting width */
+    box-sizing: border-box; 
     font-size: 14px;
 }
 
 .editable-input:focus {
     outline: none;
-    border-color: #007bff; /* Highlight border on focus */
-    background-color: #767676; /* Slightly different background when editing */
+    border-color: #007bff; 
+    background-color: #767676; 
 }

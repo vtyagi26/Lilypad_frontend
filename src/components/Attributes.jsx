@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Catcat.css";
+import "./Attributes.css";
 import UpperBar from './upperbar';
 import Dashboard from './dashboard';
 import { NavLink } from 'react-router-dom';
@@ -19,7 +19,7 @@ const Products = () => {
         const confirmation = window.confirm("Are you sure you want to delete the selected items?");
         if (confirmation) {
             alert("Items deleted successfully!");
-            setSelectedProducts([]); 
+            setSelectedProducts([]); // Reset the selected items
         } else {
             alert("Delete action canceled.");
         }
@@ -38,7 +38,7 @@ const Products = () => {
                 </div>
                 <div>
                     <div className='Cat_Nav'>
-                        <h2>Categories</h2>
+                        <h2>Attributes</h2>
                         <div className="buttons-container">
                             <button
                                 className="btn update-btn"
@@ -53,33 +53,34 @@ const Products = () => {
                             <button
                                 className="btn delete-btn"
                                 title="Delete"
-                                onClick={handleDeleteClick} 
+                                onClick={handleDeleteClick}
                             >
                                 Delete
                             </button>
                         </div>
                     </div>
                     <hr className='Line' />
-                    <h3 className='ProductListHeading'>☰ Category List</h3>
+                    <h3 className='ProductListHeading'>☰ Attribute List</h3>
                     <div className='Product_Content'>
                         <table className='table1'>
                             <thead>
                                 <tr>
                                     <th className="right-align">Select</th>
-                                    <th>Category Name</th>
+                                    <th>Attribute Name</th>
+                                    <th>Attribute Group</th>
                                     <th className="right-align">Sort Order</th>
                                     <th className="right-align">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {[
-                                    { id: 1, name: 'Category One' },
-                                    { id: 2, name: 'Category Two' },
-                                    { id: 3, name: 'Category Three' },
-                                    { id: 4, name: 'Category Four' },
-                                    { id: 5, name: 'Category Five' },
-                                    { id: 6, name: 'Category Six' },
-                                    { id: 7, name: 'Category Seven' },
+                                    { id: 1, name: 'Attribute One', group: 'Group 1'},
+                                    { id: 2, name: 'Attribute Two', group: 'Group 2' },
+                                    { id: 3, name: 'Attribute Three', group: 'Group 3' },
+                                    { id: 4, name: 'Attribute Four', group: 'Group 4' },
+                                    { id: 5, name: 'Attribute Five', group: 'Group 5' },
+                                    { id: 6, name: 'Attribute Six', group: 'Group 6' },
+                                    { id: 7, name: 'Attribute Seven', group: 'Group 7' },
                                 ].map(category => (
                                     <tr key={category.id}>
                                         <td className="right-align">
@@ -90,9 +91,10 @@ const Products = () => {
                                             />
                                         </td>
                                         <td>{category.name}</td>
+                                        <td>{category.group}</td>
                                         <td className="right-align">{category.id}</td>
                                         <td>
-                                            <NavLink to="/Cat_General">
+                                            <NavLink to="/Edit_Attribute">
                                                 <img className='edit_icon' src="./src/assets/edit.png" alt="Edit" />
                                             </NavLink>
                                         </td>

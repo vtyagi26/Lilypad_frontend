@@ -1,0 +1,25 @@
+.Product_Edit{
+    display: flex;
+    gap:20px;
+}
+.Edit_Product_Div{
+    width: 900px;
+    background-color: antiquewhite;
+    padding:10px;
+    border: 1px solid #ccc;
+}
+.save_back{
+    width:40px;
+}
+.nav_product_edit{
+    display: flex;
+    justify-content: space-between;
+}
+.Product_Edit_Icon{
+    width: 30px;
+}
+
+.Edit_Nav{
+    display: flex;
+    gap:10px;
+}

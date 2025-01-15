@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css'; 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import UpperBar from './components/upperbar'; 
-import Dashboard from './components/dashboard';
+import Attributes from './components/Attributes'
 import Main_Dashboard from './components/Main_Dashboard';
 import Products from './components/Products';
 import Catcat from './components/Catcat';
@@ -13,6 +12,8 @@ import Cat_Seo from './components/Cat_Seo';
 import Product_Seo from './components/Product_Seo';
 import Product_Attribute from './components/Product_Attribute';
 import Product_Images from './components/Product_Images';
+import Welcome from './components/Welcome';
+import Edit_Attribute from './components/Edit_Attribute';
 
 function App() {
 
@@ -21,8 +22,7 @@ function App() {
     {
       path : "/",
       element : <>
-        <UpperBar />
-        <Dashboard />
+        <Welcome />
       </> 
     },
 
@@ -48,8 +48,8 @@ function App() {
 
     {
       path : "/Attributes",
-      element :<> <UpperBar />
-      <Dashboard />
+      element :<> 
+      <Attributes />
       </>
     },
 
@@ -86,22 +86,28 @@ function App() {
     },
 
     {
-      path : "Product_Seo",
+      path : "/Product_Seo",
       element: <>
       <Product_Seo /></>
     },
 
     {
-      path : "Product_Attribute",
+      path : "/Product_Attribute",
       element : <>
       <Product_Attribute />
       </>
     },
 
     {
-      path : "Product_Images",
+      path : "/Product_Images",
       element : <>
       <Product_Images />
+      </>
+    },
+    {
+      path : "/Edit_Attribute",
+      element : <>
+      <Edit_Attribute />
       </>
     }
   ])
